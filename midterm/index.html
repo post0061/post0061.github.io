@@ -7,6 +7,91 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div class="wrapper">
+    <header>
+      <img src="./images/roger-ce-i_AYTGmRZYw-unsplash.jpg" alt="bass-guitar">
+      <h1>Bass Guitars</h1>
+    </header>
+
+    <main>
+
+      <article>
+        <!-- Creates a navbar, clicking on each navbar item sends the user to the specified section -->
+        <nav>
+          <ul class="clearfix">
+            <li><a href="#">Home</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Creates a section about history of bass guitars -->
+        <section id="story">
+          <h2>History of Bass Guitar</h2>
+          <div id="bass-guitar">
+            <img src="./images/polygon-group-0fJKvGUDztg-unsplash.jpg" alt="bass-guitar">
+          </div>
+          <div class="paragraphs">
+            <p>The first bass guitar was created in the early 1930s by Paul Tutmarc. He based his design off of the Hawaiian steel guitar, which was popular at the time. The bass guitar has come a long way since then, with many different variations and styles being created. The instrument has been used in a wide variety of genres, including rock, jazz, blues, and even country. The bass guitar is an essential part of any band, and has been for over 80 years.</p>
+            <p>The first Jazz Bass was released in 1960. Jet Harris (The Shadows), James Jamerson (Motown), and Rocco Prestia were among its most popular stars. During the 1960s, there was a noticeable shift in rock. Pink Floyd, Pink Floyd, Janis Joplin, Jimi Hendrix, Led Zeppelin, The Animals, Bob Dylan, Joan Baez, The Who, and The Doors are just a few of the artists who have recorded. In the 1960s, several manufacturers began to make versions, including Gibson, Hfner, Rickenbacker, and Fender. Double basses are gradually being phased out and replaced by bass guitars tuned in fourths (E, A, D, and G). The bass guitar has been around for nearly a century, and it comes in a variety of shapes and sizes.</p>
+          </div>
+        </section>
+
+        <!-- Creates a section containing facts, using an unordered list -->
+        <section class="facts">
+          <h3>Facts About Bass Guitars</h3>
+            <ul>
+              <li>The Bass Guitar Was Called “Fender Precision Bass”.</li>
+              <li>The Bass Guitar Is Popular in Hip Hop</li>
+              <li>A bass player plays an important role in a band. As a bass player, you’re responsible for linking harmony and rhythm. </li>
+              <li>Larry Graham, who turns out to be Drake’s uncle, invented the modern slap bass.</li>
+              <li>It is possible to play the bass guitar with or without a pick. Playing with the pick produces a sharper sound than when you pluck the strings with your fingers.</li>
+              <li>The standard bass guitar has four metal strings, though you can also get models that have five, six, or even eight strings. These models are called extended-range basses.</li>
+            </ul>
+        </section>
+
+        <!-- Creates a responsive form with the follwing fields: text, textarea and radio buttons -->
+        <h3>Contact us to learn more about bass guitars</h3>
+        <form action="index.html" method="get" id="contact">
+          <div class="input-field">
+            
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="yourname"> 
+          </div>
+
+          <div class="input-field">
+            <label for="email">Your Email</label>
+            <input id="email" type="text" name="youremail"> 
+          </div>
+    
+          <div class="input-field">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="yourmessage"></textarea>
+          </div>
+          
+          <h4>Would you like to visit our Guitar Shop?</h4>
+          <div class="radio-button">
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="y">
+            <label for="no">No</label>
+            <input type ="radio" id="no" name="n">
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="maybe" name="m">
+          </div>
+    
+          <div class="submit-button">
+            <button type="submit">Send</button>
+          </div>
+    
+        </form>       
   
+      </article>
+
+    </main>
+    <!-- Creates a simple footer -->
+    <footer>
+      &copy; Bass Guitars
+    </footer>
+  </div>  
 </body>
 </html>
