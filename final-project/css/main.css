@@ -1,0 +1,623 @@
+/* Start of CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%; 
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+
+/* Mobile first approach */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 1.4;
+  background-color: white;
+}
+
+.wrapper {
+  max-width: 1200px;
+  max-height: 100%;
+}
+
+header {
+  background-color:#222;
+  padding: 10px;
+}
+
+/* Nav bar styling */
+.nav-wrapper nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo */
+.image-wrapper {
+  width: 100%;
+  background-color: #c78c06;
+}
+.nav-wrapper ul li:first-child {
+  width: 100%;
+  background-color: #c78c06;
+}
+
+.nav-wrapper nav ul li:first-child a {
+  color:#222;
+}
+
+.nav-wrapper nav ul li:not(:first-child) a {
+  color: #c78c06;
+}
+
+.nav-wrapper nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-wrapper nav ul li a {
+  text-decoration: none;
+}
+
+.search-container form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.search-container form input {
+  width: 100%;
+}
+
+/* Search button styling + focus & hover states */
+.search-container button {
+  background: none;
+  border: 1px solid #c78c06;
+  color: #c78c06;
+}
+
+.search-container button:focus,
+.search-container button:hover {
+  background-color: #c78c06;
+  color: #222;
+}
+
+/* Welcome section */
+.main-banner {
+  background-image: url(../images/main-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-text {
+  color: white;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 0.7em;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding: 30px 10px 10px;
+  margin: 30px 0; 
+  max-width: 1200px;
+}
+
+/* Buttons styling - created a class for each style type*/
+.primary-button,
+.secondary-button,
+.tertiary-button {
+  height: 55px;
+  width: 150px;
+}
+.primary-button span,
+.secondary-button span,
+.tertiary-button span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Connect with us button styling + focus & hover states */
+.primary-button {
+  background-color: #c78c06;
+  border: none;
+  color: #222;
+}
+
+.primary-button:focus,
+.primary-button:hover {
+  background-color: #222;
+  color:#c78c06;
+}
+
+/* Our Services buttons styling + focus & hover states */
+.secondary-button {
+  background-color: #222;
+  border: none;
+  color: white;
+}
+
+.secondary-button:focus,
+.secondary-button:hover {
+  background-color: white;
+  color: #222;
+}
+
+/* Our Vision button styling + focus & hover states */ 
+.tertiary-button {
+  background-color: #0b2b48;
+  border: 1px solid #c78c06;
+  color: white;
+}
+
+.tertiary-button:focus,
+.tertiary-button:hover {
+  background-color:white;
+  color:#0b2b48;
+}
+
+/* About Us section */
+.about-us-wrapper {
+  background-color: #ffe6ac;
+  padding: 10px;
+}
+
+.about-us-wrapper section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.about-us-text h2 {
+  margin: 10px auto;
+}
+
+.about-us-text p {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.87rem;
+  font-weight: 700;
+}
+
+.about-us {
+  width: 100%;
+}
+
+.about-us-text {
+  margin: 10px;
+  font-size: 1rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+/* Our services section */
+.our-services-wrapper {
+	padding: 20px 10px;
+}
+
+.our-services-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 10px;
+}
+
+.our-services-article {
+	background-color: #ffe6ac;
+}
+
+.our-services-article-content {
+	padding: 10px;
+}
+
+.our-services-article img {
+	width: 100%;
+}
+
+.our-services-article-content p {
+	font-size: 1rem;
+	margin: 10px auto;
+}
+
+/* Our vision section */
+.our-vision-wrapper {
+  background-image: url(../images/vision.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+	padding: 20px;
+}
+
+.second-banner h3,
+.second-banner p {
+  margin-bottom: 15px;
+}
+
+.our-team-wrapper {
+	padding: 20px 10px;
+}
+
+.our-team-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 10px;
+}
+
+.team-member-card {
+	background-color: #ffe6ac;
+}
+.team-member-card img {
+  width: 100%;
+}
+
+.team-member-description {
+	padding: 20px 10px;
+}
+
+.team-member-description h4 {
+	font-weight: bold;
+	border-bottom: 2px solid #c78c06;
+}
+
+.team-member-description p {
+	margin: 10px auto;
+}
+
+/* Contact us section */
+.contact-us-wrapper {
+  padding: 20px 10px 10px;
+}
+
+.contact-us-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.contact-us-form-wrapper h3 {
+  margin: 10px auto;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-us-form label {
+  display: block;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+  width: 100%;
+  min-height: 30px;
+}
+
+.contact-us-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Button styling + focus & hover states */
+.contact-us-form button {
+  background-color: #222;
+  color: #c78c06;
+  border: none;
+  padding: 5px;
+}
+
+.contact-us-form button:focus,
+.contact-us-form button:hover {
+  background-color: #c78c06;
+  color:#222;
+}
+
+/* Location */
+.contact-us-location h3 {
+  margin-bottom: 10px;
+}
+
+.contact-us-location iframe {
+  width: 100%;
+}
+
+
+/* Hours of operation */
+.contact-us-hours h3 {
+  margin-bottom: 10px;
+}
+
+.contact-us-hours table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.contact-us-hours th,
+.contact-us-hours td {
+  border: 1px solid #222;
+  padding: 8px;
+}
+
+.contact-us-hours th {
+  background-color: #ffe6ac;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #c78c06;
+  font-size: 1rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 10px 10px;
+}
+
+/* Desktop */
+@media only screen and (min-width: 760px) {
+  /* Buttons styling */
+  .primary-button,
+  .secondary-button,
+  .tertiary-button {
+    height: 70px;
+    width: 200px;
+    font-size: 15px;
+  }
+
+  /* Add pointer cursor on hover */
+  button:hover {
+    cursor: pointer;
+  }
+
+  /* Nav bar styling */
+  .nav-wrapper {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  .nav-wrapper .image-wrapper {
+    width: 80px;
+    margin-right: 40px;
+    background-color: transparent;
+  }
+
+  .nav-wrapper .image-wrapper img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .nav-wrapper nav {
+    width: 100%;
+  }
+
+  .nav-wrapper nav ul {
+    flex-direction: row;
+  }
+
+  .nav-wrapper nav ul li {
+    flex-direction: row;
+    padding: 15px;
+  }
+
+  .search-container {
+    min-width: 250px;
+  }
+
+  /* Welcome Section */
+  .banner-text h1 {
+    font-size: 6rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+  
+  /* About Us section  */
+  .about-us-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-wrapper section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    max-width: 1200px;
+  }
+
+  .about-us-text h2 {
+    font-size: 3rem;
+  }
+
+  .img-wrapper {
+    height: 100%;
+  }
+
+  /* Our Services grid */
+  .our-services-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .our-services-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+
+  .our-services-article:nth-child(1),
+  .our-services-article:nth-child(2) {
+    grid-row: 1;
+    grid-column: span 3;
+  }
+
+  .our-services-article:nth-child(3),
+  .our-services-article:nth-child(4),
+  .our-services-article:nth-child(5) {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .our-services-article-content h3 {
+    font-size: 1.87rem;
+    margin-bottom: 20px;
+  }
+  
+  .our-services-article button {
+    width: 100%;
+  }
+
+  /*  Our Vision  */
+  .second-banner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Our Team */
+  .our-team-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .our-team-grid {
+    row-gap: 0;
+  }
+
+  .team-member-card {
+    display: flex;
+  }
+
+  .team-member-card:nth-child(1) {
+    flex-direction: row;
+  }
+
+  .team-member-card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .team-member-card img,
+  .team-member-description {
+    width: 50%;
+  }
+
+  /* Contact Us */
+  .contact-us-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contact-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-us-form-wrapper {
+    order: 1;
+    grid-row: 1;
+    grid-column: span 1;
+  }
+
+  .contact-us-form button {
+    font-size: 20px;
+  }
+
+  /* Hours of operation */
+  .contact-us-hours {
+    order: 3;
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  /* Location map */
+  .contact-us-location {
+    order: 2;
+    grid-row: 1;
+    grid-column: span 1;
+  }
+
+    /* Footer */
+  .footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+} 
